@@ -1,8 +1,14 @@
+---
 Date: 2008-11-12 14:52:08 +01:00
 Slug: 2008/11/12/doing-the-locale-danmark
 Tags: howto, java, programming, software, software-development, utils, tips, locale, internationalization
 Title: Doing the Locale - Danmark
 Category: Programming
+layout: post
+---
+{% include JB/setup %}
+
+
 
 The following illustrates how to get the Number format working with a danish locale.
 
