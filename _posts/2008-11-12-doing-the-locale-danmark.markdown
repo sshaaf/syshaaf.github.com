@@ -9,7 +9,7 @@ category: Programming
 
 The following illustrates how to get the Number format working with a danish locale.
 
-
+{% highlight java %}
 	import java.text.NumberFormat;
 	import java.util.Currency;
 	import java.util.Locale;
@@ -34,4 +34,5 @@ The following illustrates how to get the Number format working with a danish loc
  		System.out.println(krFormat.format(amount));
  		}
 	}
+{% endhighlight %}
 
