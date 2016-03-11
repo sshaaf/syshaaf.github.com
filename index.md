@@ -1,13 +1,16 @@
 ---
 layout: page
-title: Hello World!
-tagline: another jekyll blog
+title: (*)nixlog
+tagline: another bit in the wall
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+This blog used to be on www.shaafshah.com till roughly about 2010 as I recall and was hosted as a wordpress blog. Even though wordpress has all the kool friendly features, I didnt understand the need of running a database engine to host the blog, so I moved to Jekyll and also actually played a bit with Pelican. Well anyways, blogging is always an interesting hobby, I havent blogged for a long while but I hope to keep up with it. 
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+
+This blog uses Jekyll and JekyllBootstrap.
+ Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+ Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
 
 
 <div class="posts">
