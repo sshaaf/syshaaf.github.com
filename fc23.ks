@@ -10,7 +10,10 @@ text
 firstboot --disable
 
 # Keyboard layouts
-keyboard --vckeymap=us --xlayouts='us'
+keyboard us
+
+#Time zone
+timezone US/Eastern
 
 # System language
 lang en_US.UTF-8
@@ -23,9 +26,6 @@ rootpw --plaintext "to_be_disabled"
 
 # System services
 services --enabled="sshd,waagent,NetworkManager"
-
-# System timezone
-timezone Etc/UTC --isUtc --ntpservers 0.rhel.pool.ntp.org,1.rhel.pool.ntp.org,2.rhel.pool.ntp.org,3.rhel.pool.ntp.org
 
 # Partition clearing information
 clearpart --all --initlabel
@@ -52,13 +52,9 @@ skipx
 # Power down the machine after install
 poweroff
 
-# Primary Fedora repo
-repo --name="epel7" --baseurl="http://dl.fedoraproject.org/pub/epel/7/x86_64/"
 
 %packages
 @core
-@standard
-@console-internet
 chrony
 sudo
 python-pyasn1
@@ -67,7 +63,11 @@ ntfsprogs
 WALinuxAgent
 -dracut-config-rescue
 
-%end
+# Explicitly specified here:
+# <notting> walters: because otherwise dependency loops cause yum issues.
+kernel
+kernel-modules
+kernel-modules-extra
 
 %post --log=/var/log/anaconda/post-install.log
 
