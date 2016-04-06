@@ -12,7 +12,7 @@ I have been using Linux for quite some time now, and jumping from windows xp to 
 Not just that I had completely forgotten what windows was all about, configs, screens, services. Anyways, I made a quick compilation of how you could run Fedora 23 and on VirtualBox running on windows 10. 
 
 
-###Software versions
+**Software versions**
 - Windows: 10
 - VirtualBox: 5.0.16.x
 - Fedora: 23
@@ -52,7 +52,7 @@ Install node.js and azure-cli coming up next.
 
 
 
-###References:
+**References:**
 
 A nice page on how to downgrade Xorg
 http://gamblisfx.com/install-virtualbox-guest-additions-on-fedora-23/
