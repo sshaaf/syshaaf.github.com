@@ -63,11 +63,8 @@ ntfsprogs
 WALinuxAgent
 -dracut-config-rescue
 
-# Explicitly specified here:
-# <notting> walters: because otherwise dependency loops cause yum issues.
-kernel
-kernel-modules
-kernel-modules-extra
+%end
+
 
 %post --log=/var/log/anaconda/post-install.log
 
