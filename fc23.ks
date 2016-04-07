@@ -1,5 +1,7 @@
 # Kickstart for creating a Fedora VHD
 
+#https://raw.githubusercontent.com/syshaaf/syshaaf.github.com/master/fc23.ks
+
 # System authorization information
 auth --enableshadow --passalgo=sha512
 
@@ -52,6 +54,8 @@ skipx
 # Power down the machine after install
 poweroff
 
+# Primary Fedora repo
+repo --name="epel7" --baseurl="http://dl.fedoraproject.org/pub/epel/7/x86_64/"
 
 %packages
 @core
