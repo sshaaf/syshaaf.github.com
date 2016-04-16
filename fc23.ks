@@ -1,3 +1,6 @@
+44 39 35 46
+
+
 # Kickstart for creating a Fedora VHD
 
 #https://raw.githubusercontent.com/syshaaf/syshaaf.github.com/master/fc23.ks
