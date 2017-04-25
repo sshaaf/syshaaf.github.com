@@ -24,13 +24,13 @@ semanage is used to configure certain elements of SELinux policy without requiri
 Which package provides semanage? I use fedora so yum in this case should help.
 
 
-	yum provides semanage
+	dnf provides semanage
 
 
 I have the following package that provides semanage so lets install that.
 
 
-	yum install policycoreutils-python-2.1.14-45.fc19.x86_64
+	dnf install policycoreutils-python-utils
 
 
 Additionally if you would like to check the ports in the semanage policy you could do the following
@@ -55,7 +55,8 @@ Okay now all looks good, lets move on and add the rules into the firewall. If yo
 
 
 	firewall-cmd --permanent --zone=public --add-port=42/tcp
-
+	
+To test out in the current session try without permanent. 
 
 This should be all set now. Now you can go ahead and change the port in the sshd_config to 52022
 
